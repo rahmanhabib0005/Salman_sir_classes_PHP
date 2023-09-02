@@ -1,0 +1,20 @@
+[
+    { 
+        "id" : 1,
+        "name": "Habibur Rahman",
+        "email": "rahmanhabib0005@gmail.com",
+        "password" : 1111
+    },
+    {
+        "id" : 2,
+        "name": "Sumon Mia",
+        "email": "sumonmia@gmail.com",
+        "password" : 1111
+    },
+    {
+        "id" : 3,
+        "name": "Simanto Morul",
+        "email": "simantomorul@gmail.com",
+        "password": 1111
+    }
+]
