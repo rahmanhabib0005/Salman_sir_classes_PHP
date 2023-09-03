@@ -25,7 +25,7 @@ if($_SESSION['email']){
     <div class="container">
     <?php
         if($_SESSION['email']){
-            echo '<button class="btn btn-danger"><a href="logout.php">Logout</a></button>';
+            echo '<button class="btn btn-danger mb-3"><a class="text-light" href="logout.php">Logout</a></button>';
         }
     ?>
     <table id="example" class='table table-striped table-bordered'>
