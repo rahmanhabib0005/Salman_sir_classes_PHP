@@ -1,3 +1,7 @@
+<?php
+session_start();
+if($_SESSION['email']){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +23,11 @@
             $json_a = json_decode($string, true);
     ?>
     <div class="container">
+    <?php
+        if($_SESSION['email']){
+            echo '<button class="btn btn-danger"><a href="logout.php">Logout</a></button>';
+        }
+    ?>
     <table id="example" class='table table-striped table-bordered'>
         <thead>
             <tr>
@@ -46,3 +55,7 @@
     </script>
 </body>
 </html>
+<?php }
+else{
+    header('location: login.php');
+} ?>
