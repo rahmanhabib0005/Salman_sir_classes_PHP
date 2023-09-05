@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -28,6 +29,7 @@
                               <input type="password" class="form-control" name="password" id="" placeholder="">
                          </div>
                          <button class="btn btn-primary">Submit</button>
+                         <button class="btn btn-warning"><a href="registration.php">Register</a></button>
                     </form>
                </div>
           </div>
@@ -43,3 +45,6 @@
 </body>
 
 </html>
+
+<?php
+

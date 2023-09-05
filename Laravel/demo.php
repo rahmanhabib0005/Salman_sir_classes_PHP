@@ -28,6 +28,7 @@ if($_SESSION['email']){
             echo '<button class="btn btn-danger mb-3"><a class="text-light" href="logout.php">Logout</a></button>';
         }
     ?>
+    <button class="btn btn-primary mb-3"><a class="text-light" href="registration.php">Register</a></button>
     <table id="example" class='table table-striped table-bordered'>
         <thead>
             <tr>
@@ -39,7 +40,7 @@ if($_SESSION['email']){
         <tbody>
             <?php foreach($json_a as $key=>$value){ ?>
             <tr>
-                <td><?php echo $value['id'] ?></td>
+                <td><?php echo $key+1 ?></td>
                 <td><?php echo $value['name'] ?></td>
                 <td><?php echo $value['email'] ?></td>
             </tr>
@@ -55,7 +56,9 @@ if($_SESSION['email']){
     </script>
 </body>
 </html>
-<?php }
+<?php }elseif(!file_exists('person.json')){
+    header('location: registration.php');
+}
 else{
-    header('location: login.php');
+    header('location: location.php');
 } ?>
